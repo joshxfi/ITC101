@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cool Website</title>
+    <style>
+      .container {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-family: sans-serif;
+        background: #030459;
+      }
+
+      .form {
+        background-color: #eee;
+        padding: 20px 30px 20px 30px;
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .input {
+        margin-bottom: 20px;
+      }
+
+      .input input {
+        border-radius: 4px;
+        padding: 6px;
+        padding-left: 12px;
+        font-size: 16px;
+        outline: none;
+        border: 2px solid #bbb;
+        width: 250px;
+        height: 30px;
+      }
+
+      .input p {
+        color: #4c4c4c;
+      }
+
+      button {
+        background: #0077b6;
+        border-radius: 4px;
+        padding: 12px;
+        color: white;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background: #005583;
+      }
+
+      label {
+        margin: 16px 0 16px 0;
+        color: #4c4c4c;
+      }
+    </style>
+  </head>
+
+  <body class="container">
+    <form class="form">
+      <div class="input">
+        <p>Username:</p>
+        <input type="text" placeholder="Enter Username" />
+      </div>
+
+      <div class="input">
+        <p>Password:</p>
+        <input type="password" placeholder="Enter Password" />
+      </div>
+
+      <label>
+        <input type="checkbox" />
+        Remember me
+      </label>
+      <button type="button">Register</button>
+    </form>
+  </body>
+</html>
