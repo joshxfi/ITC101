@@ -5,7 +5,7 @@ export const Meal = ({ strMeal, strMealThumb }: IMeal) => {
   return (
     <>
       <div
-        className="h-[300px] w-[250px] group relative overflow-hidden bg-white shadow-md"
+        className="h-[300px] md:w-[250px] w-[200px] group relative overflow-hidden bg-white shadow-md"
         key={strMeal}
       >
         <img

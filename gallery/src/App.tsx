@@ -50,7 +50,7 @@ function App() {
 
   return (
     <main className="px-4 py-12 text-white max-w-screen-xl mx-auto flex flex-col items-center">
-      <div className="inline-flex justify-center mx-auto space-x-2 mb-4 text-sm">
+      <div className="inline-flex flex-wrap justify-center mx-auto gap-2 mb-4 text-sm">
         {categories.map(({ name, Icon }) => (
           <button
             type="button"
