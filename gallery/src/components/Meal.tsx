@@ -1,6 +1,8 @@
 import toast from "react-hot-toast";
 import { IMeal } from "../types";
 
+const randomPrice = () => Math.floor(Math.random() * (400 - 70) + 70);
+
 export const Meal = ({ strMeal, strMealThumb }: IMeal) => {
   return (
     <>
@@ -14,7 +16,7 @@ export const Meal = ({ strMeal, strMealThumb }: IMeal) => {
           alt={strMeal}
         />
         <div className="bg-white z-10 absolute w-full flex flex-col justify-center -bottom-44 group-hover:bottom-0 transition-all duration-300 p-4 font-semibold">
-          <p className="text-2xl font-bold text-black">₱105</p>
+          <p className="text-2xl font-bold text-black">₱{randomPrice()}</p>
           <p className="text-sm text-gray-800">{strMeal}</p>
 
           <button
