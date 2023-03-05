@@ -1,7 +1,7 @@
 import { useState, useCallback } from "react";
 import { Toaster } from "react-hot-toast";
 import useSWR, { Fetcher } from "swr";
-import toast from 'react-hot-toast'
+import toast from "react-hot-toast";
 import {
   GiFoodChain,
   GiCow,
@@ -39,12 +39,12 @@ function App() {
       Icon: GiChicken,
     },
     {
-      name: "Dessert",
-      Icon: GiCakeSlice,
-    },
-    {
       name: "Pork",
       Icon: GiPig,
+    },
+    {
+      name: "Dessert",
+      Icon: GiCakeSlice,
     },
   ];
 
@@ -64,8 +64,7 @@ function App() {
                   background: "#000",
                   border: "2px solid #fff",
                 },
-
-              })
+              });
               setTimeout(() => mutate(), 500);
             }}
             className="bg-black transition-all text-white py-3 px-8 flex space-x-3 items-center rounded-full"
