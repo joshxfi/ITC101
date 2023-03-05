@@ -1,11 +1,11 @@
-import toast from 'react-hot-toast'
+import toast from "react-hot-toast";
 import { IMeal } from "../types";
 
 export const Meal = ({ strMeal, strMealThumb }: IMeal) => {
   return (
     <>
       <div
-        className="h-[300px] w-[250px] group relative  overflow-hidden bg-white rounded-md"
+        className="h-[300px] w-[250px] group relative overflow-hidden bg-white shadow-md"
         key={strMeal}
       >
         <img
@@ -17,7 +17,19 @@ export const Meal = ({ strMeal, strMealThumb }: IMeal) => {
           <p className="text-2xl font-bold text-black">₱105</p>
           <p className="text-sm text-gray-800">{strMeal}</p>
 
-          <button onClick={() => toast.success("Food added to cart")} className="rounded-full p-4 mt-4 bg-black text-white font-normal text-sm text-center">
+          <button
+            onClick={() =>
+              toast("Food added to cart", {
+                icon: "🛒",
+                style: {
+                  color: "#fff",
+                  background: "#000",
+                  border: "2px solid #fff",
+                },
+              })
+            }
+            className="p-3 mt-4 bg-black text-white font-normal text-sm text-center"
+          >
             Order Now
           </button>
         </div>

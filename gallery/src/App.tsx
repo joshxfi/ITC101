@@ -1,6 +1,7 @@
 import { useState, useCallback } from "react";
 import { Toaster } from "react-hot-toast";
 import useSWR, { Fetcher } from "swr";
+import toast from 'react-hot-toast'
 import {
   GiFoodChain,
   GiCow,
@@ -49,16 +50,25 @@ function App() {
 
   return (
     <main className="px-4 py-12 text-white max-w-screen-xl mx-auto flex flex-col items-center">
-      <div className="inline-flex justify-center mx-auto space-x-2 mb-6 bg-white rounded-full p-1 text-sm">
+      <div className="inline-flex justify-center mx-auto space-x-2 mb-4 text-sm">
         {categories.map(({ name, Icon }) => (
           <button
             type="button"
             key={name}
             onClick={() => {
               setCategory(name);
+              toast(`Category is now ${name}`, {
+                icon: "😋",
+                style: {
+                  color: "#fff",
+                  background: "#000",
+                  border: "2px solid #fff",
+                },
+
+              })
               setTimeout(() => mutate(), 500);
             }}
-            className="bg-black transition-all text-white py-4 px-8 flex space-x-3 items-center rounded-full"
+            className="bg-black transition-all text-white py-3 px-8 flex space-x-3 items-center rounded-full"
           >
             <Icon className="text-xl" /> <p>{name}</p>
           </button>
@@ -71,7 +81,7 @@ function App() {
         ))}
       </div>
 
-      <Toaster position="top-right" />
+      <Toaster position="bottom-right" />
     </main>
   );
 }
