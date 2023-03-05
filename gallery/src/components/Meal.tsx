@@ -5,7 +5,7 @@ export const Meal = ({ strMeal, strMealThumb }: IMeal) => {
   return (
     <>
       <div
-        className="h-[300px] w-[250px] group relative rounded-md shadow-md overflow-hidden bg-white"
+        className="h-[300px] w-[250px] group relative  overflow-hidden bg-white rounded-md"
         key={strMeal}
       >
         <img
@@ -14,10 +14,10 @@ export const Meal = ({ strMeal, strMealThumb }: IMeal) => {
           alt={strMeal}
         />
         <div className="bg-white z-10 absolute w-full flex flex-col justify-center -bottom-44 group-hover:bottom-0 transition-all duration-300 p-4 font-semibold">
-          <p className="text-2xl font-bold">₱105</p>
+          <p className="text-2xl font-bold text-black">₱105</p>
           <p className="text-sm text-gray-800">{strMeal}</p>
 
-          <button onClick={() => toast.success("Food added to cart")} className="p-2 mt-4 bg-black text-white font-normal text-sm text-center">
+          <button onClick={() => toast.success("Food added to cart")} className="rounded-full p-4 mt-4 bg-black text-white font-normal text-sm text-center">
             Order Now
           </button>
         </div>
