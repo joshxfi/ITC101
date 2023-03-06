@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Poem</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mynerve&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              mynerve: ["Mynerve", "cursive"],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+
+  <style>
+    body > div:first-child {
+      background: url("https://images.unsplash.com/photo-1677741447337-48aba59a8f61?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80")
+        no-repeat center center fixed;
+      background-size: cover;
+    }
+
+    body > div:not(:first-child) {
+      background: url("https://img.freepik.com/free-photo/white-paper-texture_1194-2301.jpg?w=2000");
+      background-size: cover;
+    }
+  </style>
+
+  <body class="grid place-items-center min-h-screen relative">
+    <div class="grayscale absolute w-full h-full"></div>
+    <div class="relative z-20 p-12 bg-transparent rounded shadow-lg">
+      <div class="font-mynerve mb-6">
+        <h1 class="text-4xl">The Costly Misstep</h1>
+        <p class='text-lg'>by Josh Daniel, powered by AI</p>
+      </div>
+      <pre class="font-mynerve text-xl">
+Oh, how my folly did lead me astray
+In one moment of neglectful ease
+A single mistake, I did betray
+My own well-being, my own peace
+
+For in my haste, I failed to prepare
+And thoughtlessly, did I go forth
+Only to find, to my despair
+That all my efforts, of little worth
+
+The cost, it was a heavy toll
+Both in time and in gold
+And now I find, I must console
+Myself, for the loss untold
+      </pre>
+    </div>
+  </body>
+</html>
