@@ -15,7 +15,7 @@ export const Song = ({ top, title, artist, image, link }: Props) => {
         <img
           src={`/songs/${image}`}
           alt={title}
-          className="w-full h-[200px] grayscale hover:grayscale-0 transition-all object-cover rounded-lg object-top group-hover:scale-110 "
+          className="w-full h-[200px] grayscale group-hover:grayscale-0 transition-all object-cover rounded-lg object-top group-hover:scale-110 duration-300"
         />
       </div>
 
