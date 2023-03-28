@@ -1,13 +1,14 @@
 import Image from "next/image";
 import { Hero, Partners } from "@/components";
+import { Testimonials } from "@/components/Testimonials";
 
 export default function Home() {
   return (
     <section className="mt-32">
       <Hero />
 
-      <div className="relative bg-secondary-400 h-screen mt-40">
-        <div className="w-screen absolute -top-28 h-[200px]">
+      <div className="relative bg-secondary-400 pb-32 mt-40 pt-12">
+        <div className="w-screen absolute -z-10 -top-28 h-[200px]">
           <Image
             src="/assets/wave.svg"
             alt="wave"
@@ -17,6 +18,8 @@ export default function Home() {
         </div>
 
         <Partners />
+
+        <Testimonials />
       </div>
     </section>
   );

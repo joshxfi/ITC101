@@ -6,7 +6,7 @@ const gruppo = Gruppo({ weight: ["400"], subsets: ["latin"] });
 
 export const Partners = () => {
   return (
-    <div className="relative z-10 top-10 flex flex-col items-center">
+    <div className="flex flex-col items-center">
       <h2
         className={`text-5xl text-bold pb-2 inline-block border-b-2 border-b-green-600 ${gruppo.className}`}
       >

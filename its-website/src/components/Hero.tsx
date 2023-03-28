@@ -45,13 +45,6 @@ export const Hero = () => {
           />
         </div>
 
-        <Image
-          src="/assets/rocket.png"
-          className="object-contain absolute bottom-7 right-0"
-          alt="avatar"
-          height={100}
-          width={100}
-        />
       </div>
 
       <Image
