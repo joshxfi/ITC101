@@ -3,13 +3,13 @@ import { Gruppo } from "next/font/google";
 
 import { Container } from "@/components";
 
-const unbounded = Gruppo({ weight: ["400"], subsets: ["latin"] });
+const gruppo = Gruppo({ weight: ["400"], subsets: ["latin"] });
 
 export const Hero = () => {
   return (
     <Container className="flex justify-between items-center">
       <div>
-        <h1 className={`text-7xl ${unbounded.className}`}>
+        <h1 className={`text-7xl ${gruppo.className}`}>
           It Starts with ITS
         </h1>
         <p className="max-w-[650px] mt-4 text-lg font-light">
