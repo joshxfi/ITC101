@@ -6,8 +6,8 @@ export default function Home() {
     <section className="mt-32">
       <Hero />
 
-      <div>
-        <div className="w-screen left-0 absolute h-[200px]">
+      <div className='relative bg-secondary-400 h-screen mt-40'>
+        <div className="w-screen absolute -top-28 h-[200px]">
           <Image
             src="/assets/wave.svg"
             alt="wave"
@@ -15,7 +15,6 @@ export default function Home() {
             className="object-cover object-top"
           />
         </div>
-        <div className="bg-secondary-400 absolute h-screen w-screen"></div>
       </div>
     </section>
   );

@@ -35,14 +35,31 @@ export const Hero = () => {
         </div>
       </div>
 
-      <div className="relative rounded-full bg-secondary-400 w-[400px] h-[400px] overflow-hidden">
+      <div className="relative">
+        <div className="rounded-full relative bg-secondary-400 w-[400px] h-[400px] overflow-hidden">
+          <Image
+            src="/assets/avatar.png"
+            className="object-contain mt-12 ml-4"
+            alt="avatar"
+            fill
+          />
+        </div>
+
         <Image
-          src="/assets/avatar.png"
-          className="object-contain mt-12 ml-4"
+          src="/assets/rocket.png"
+          className="object-contain absolute bottom-7 right-0"
           alt="avatar"
-          fill
+          height={100}
+          width={100}
         />
       </div>
+
+      <Image
+        src="/assets/gridsDotted.png"
+        alt="grids"
+        fill
+        className="-z-10 opacity-20"
+      />
     </Container>
   );
 };
