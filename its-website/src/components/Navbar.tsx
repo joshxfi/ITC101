@@ -1,7 +1,9 @@
+import { Container } from "./Container";
+
 export const Navbar = () => {
   return (
-    <nav className="flex justify-between items-center mt-12">
-      <h1 className='text-green-600 font-black text-5xl'>ITS</h1>
+    <Container className="flex justify-between items-center mt-12">
+      <h1 className="text-green-600 font-black text-5xl">ITS</h1>
 
       <div className="flex space-x-24 items-center">
         <ul className="flex space-x-12">
@@ -10,10 +12,13 @@ export const Navbar = () => {
           <li>Contact</li>
         </ul>
 
-        <button type="button" className="bg-green-600 font-medium rounded px-8 py-3">
+        <button
+          type="button"
+          className="bg-green-600 font-medium rounded px-8 py-3"
+        >
           Register
         </button>
       </div>
-    </nav>
+    </Container>
   );
 };
