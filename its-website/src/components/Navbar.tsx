@@ -6,7 +6,7 @@ export const Navbar = () => {
       <h1 className='text-green-600 font-black text-5xl'>ITS</h1>
 
       <div className='flex space-x-24 items-center'>
-        <ul className='flex space-x-12'>
+        <ul className='md:flex space-x-12 hidden'>
           <li>Home</li>
           <li>About</li>
           <li>Contact</li>
@@ -14,7 +14,7 @@ export const Navbar = () => {
 
         <button
           type='button'
-          className='bg-green-600 font-medium rounded px-8 py-3'
+          className='bg-green-600 font-medium rounded px-8 py-3 text-sm md:text-base'
         >
           Register
         </button>

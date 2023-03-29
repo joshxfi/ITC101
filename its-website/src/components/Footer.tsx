@@ -1,9 +1,8 @@
 import { footerItems } from '@/utils/constants';
-import { Container } from './Container';
 
 export const Footer = () => {
   return (
-    <Container className='pb-12 flex flex-col items-center'>
+    <footer className='pb-12 flex flex-col items-center text-sm md:text-base'>
       <div className='mt-40 grid w-full grid-cols-2 flex-wrap justify-between gap-y-16 sm:flex'>
         {footerItems.map((item) => (
           <ul key={item.name} className='flex flex-col gap-4'>
@@ -22,13 +21,18 @@ export const Footer = () => {
             ))}
           </ul>
         ))}
-        <div className='text-gray-400 text-right self-end space-y-2'>
+        <div className='text-gray-400 text-right self-end space-y-2 hidden md:block'>
           <h1 className='text-green-600 font-black text-5xl'>ITS</h1>
           <p>Information Technology Society</p>
         </div>
       </div>
 
-      <div className='bg-secondary-100 h-[2px] my-24 w-full' />
+        <div className='text-gray-400 text-center space-y-2 md:hidden mt-24'>
+          <h1 className='text-green-600 font-black text-5xl'>ITS</h1>
+          <p>Information Technology Society</p>
+        </div>
+
+      <div className='bg-secondary-100 h-[2px] md:my-24 my-12 w-full' />
 
       <a
         href='https://github.com/joshxfi'
@@ -38,6 +42,6 @@ export const Footer = () => {
       >
         Made by Josh Daniel Bañares © 2023
       </a>
-    </Container>
+    </footer>
   );
 };

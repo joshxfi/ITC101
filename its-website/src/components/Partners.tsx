@@ -8,15 +8,15 @@ export const Partners = () => {
   return (
     <div className='flex flex-col items-center'>
       <h2
-        className={`text-5xl text-bold pb-2 inline-block border-b-2 border-b-green-600 ${gruppo.className}`}
+        className={`md:text-5xl text-2xl text-bold pb-2 inline-block border-b-2 border-b-green-600 ${gruppo.className}`}
       >
         Our Trusted Partners
       </h2>
 
-      <div className='mt-14 flex space-x-24'>
-        <RxNotionLogo className='text-6xl hover:text-green-400 transition-colors cursor-pointer' />
-        <BsApple className='text-6xl hover:text-green-400 transition-colors cursor-pointer' />
-        <BsPlaystation className='text-6xl hover:text-green-400 transition-colors cursor-pointer' />
+      <div className='mt-14 flex lg:space-x-24 space-x-20 md:text-6xl text-4xl'>
+        <RxNotionLogo className='hover:text-green-400 transition-colors cursor-pointer' />
+        <BsApple className='hover:text-green-400 transition-colors cursor-pointer' />
+        <BsPlaystation className='hover:text-green-400 transition-colors cursor-pointer' />
       </div>
     </div>
   );
