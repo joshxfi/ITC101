@@ -19,7 +19,7 @@ const data = [
 
 export const Testimonials = () => {
   return (
-    <section className='relative md:mt-44 mt-32 flex flex-col gap-y-12'>
+    <section id='testimonials' className='relative md:mt-44 mt-32 flex flex-col gap-y-12 scroll-mt-24'>
       <Image
         src='/assets/web.png'
         alt='web'

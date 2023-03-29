@@ -7,9 +7,32 @@ export const Navbar = () => {
 
       <div className='flex space-x-24 items-center'>
         <ul className='md:flex space-x-12 hidden'>
-          <li>Home</li>
-          <li>About</li>
-          <li>Contact</li>
+          <li>
+            <a
+              href='#partners'
+              className='hover:text-green-500 transition-colors'
+            >
+              Partners
+            </a>
+          </li>
+          <li>
+            <a
+              href='#testimonials'
+              className='hover:text-green-500 transition-colors'
+            >
+              Testimonials
+            </a>
+          </li>
+          <li>
+            <a
+              href='https://github.com/joshxfi/ITC101/tree/main/its-website'
+              target='_blank'
+              rel='noopener noreferrer'
+              className='hover:text-green-500 transition-colors'
+            >
+              GitHub
+            </a>
+          </li>
         </ul>
 
         <button
