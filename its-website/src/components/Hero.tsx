@@ -68,6 +68,7 @@ export const Hero = () => {
             alt='avatar'
             sizes='(max-width: 768px) 100vw, 400px'
             fill
+            priority
           />
         </motion.div>
       </div>

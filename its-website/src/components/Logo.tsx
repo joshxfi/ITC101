@@ -1,7 +1,16 @@
+import Image from 'next/image';
+
 export const Logo = () => {
   return (
-    <h1 className='from-green-500 to-gray-700 bg-gradient-to-b shadow-md bg-clip-text text-transparent font-black text-5xl'>
-      ITS
-    </h1>
+    <div className='w-[70px] h-[70px] md:w-[100px] md:h-[100px] relative'>
+      <Image
+        src='/assets/logo.png'
+        alt='logo'
+        quality={100}
+        priority
+        fill
+        className='object-contain'
+      />
+    </div>
   );
 };

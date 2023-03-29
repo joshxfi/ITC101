@@ -4,7 +4,7 @@ import { Testimonials } from '@/components/Testimonials';
 
 export default function Home() {
   return (
-    <section className='md:mt-36 mt-20'>
+    <section className='md:mt-28 mt-20'>
       <Hero />
 
       <div className='relative mt-16 w-screen md:h-[250px] h-[80px]'>

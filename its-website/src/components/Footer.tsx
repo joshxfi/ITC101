@@ -22,13 +22,13 @@ export const Footer = () => {
             ))}
           </ul>
         ))}
-        <div className='text-gray-400 text-right self-end space-y-2 hidden md:block'>
+        <div className='text-gray-400 text-right self-end flex-col items-end space-y-2 hidden md:flex'>
           <Logo />
           <p>Information Technology Society</p>
         </div>
       </div>
 
-      <div className='text-gray-400 text-center space-y-2 md:hidden mt-24'>
+      <div className='text-gray-400 flex flex-col items-center space-y-2 md:hidden mt-24'>
         <Logo />
         <p>Information Technology Society</p>
       </div>
