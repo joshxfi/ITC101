@@ -1,4 +1,5 @@
 import { footerItems } from '@/utils/constants';
+import { Logo } from './Logo';
 
 export const Footer = () => {
   return (
@@ -22,15 +23,15 @@ export const Footer = () => {
           </ul>
         ))}
         <div className='text-gray-400 text-right self-end space-y-2 hidden md:block'>
-          <h1 className='text-green-600 font-black text-5xl'>ITS</h1>
+          <Logo />
           <p>Information Technology Society</p>
         </div>
       </div>
 
-        <div className='text-gray-400 text-center space-y-2 md:hidden mt-24'>
-          <h1 className='text-green-600 font-black text-5xl'>ITS</h1>
-          <p>Information Technology Society</p>
-        </div>
+      <div className='text-gray-400 text-center space-y-2 md:hidden mt-24'>
+        <Logo />
+        <p>Information Technology Society</p>
+      </div>
 
       <div className='bg-secondary-100 h-[2px] md:my-24 my-12 w-full' />
 

@@ -1,9 +1,9 @@
-import { Container } from './Container';
+import { Button, Container, Logo } from '@/components';
 
 export const Navbar = () => {
   return (
     <Container className='flex justify-between items-center mt-12'>
-      <h1 className='text-green-600 font-black text-5xl'>ITS</h1>
+      <Logo />
 
       <div className='flex space-x-24 items-center'>
         <ul className='md:flex space-x-12 hidden'>
@@ -35,12 +35,7 @@ export const Navbar = () => {
           </li>
         </ul>
 
-        <button
-          type='button'
-          className='bg-green-600 font-medium rounded px-8 py-3 text-sm md:text-base'
-        >
-          Register
-        </button>
+        <Button text='Register' />
       </div>
     </Container>
   );

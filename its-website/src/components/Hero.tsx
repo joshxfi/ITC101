@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import { Gruppo } from 'next/font/google';
 
-import { Container } from '@/components';
+import { Button, Container } from '@/components';
 
 const gruppo = Gruppo({ weight: ['400'], subsets: ['latin'] });
 
@@ -17,16 +17,11 @@ export const Hero = () => {
         </p>
 
         <div className='flex space-x-3 mt-8 justify-center xl:justify-start text-sm md:text-base'>
-          <button
-            type='button'
-            className='bg-green-600 font-medium rounded px-8 py-3'
-          >
-            Get Started
-          </button>
+          <Button text='Get Started' />
 
           <button
             type='button'
-            className='bg-secondary-100 font-medium rounded px-8 py-3'
+            className='bg-secondary-100 font-medium shadow-md rounded px-8 py-3'
           >
             Learn More &rarr;
           </button>
